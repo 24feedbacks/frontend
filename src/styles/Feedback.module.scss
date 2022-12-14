@@ -1,0 +1,28 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // padding: 0 10em 0 10em;
+}
+
+.Input {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2vw;
+}
+
+.FormControl {
+    min-width: calc((35em * 20) / 100);
+}
+
+.Radio {
+    display: flex;
+    flex-direction: row;
+    // width: 100px;
+}
+
+.Text {
+    width: 30vw;
+    min-height: 4vh;
+}

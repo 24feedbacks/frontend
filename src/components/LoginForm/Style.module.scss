@@ -1,0 +1,59 @@
+.glassForm {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+}
+
+@media (max-width: 2620px) {
+    .glassForm {
+        width: calc(30vw / 1.2);
+    }
+}
+
+@media (max-width: 1440px) {
+    .glassForm {
+        width: calc(40vw / 1.2);
+    }
+}
+
+@media (max-width: 1440px) {
+    .glassForm {
+        width: calc(40vw / 1.2);
+    }
+}
+@media (max-width: 500px) {
+    .glassForm {
+        width: 70vw;
+    }
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputText {
+    color: #fff;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2.5vh;
+    color: #fff;
+}
+
+.button > button {
+    margin-right: 1em;
+}
