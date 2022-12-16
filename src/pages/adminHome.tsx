@@ -25,7 +25,7 @@ export default () => {
             .catch((err) => console.log(err));
     }, []);
 
-    const generateTeams = teams.map((team: any, i) => (
+    const generateTeams = teams ? teams?.map((team: any, i) => (
         <TableRow key={i}>
             <TableCell component="th" scope="row">
                 {team.name}
@@ -34,9 +34,9 @@ export default () => {
                 {new Date(team.created_at).toLocaleDateString()}
             </TableCell>
         </TableRow>
-    ));
+    ) ) : [];
 
-    const generateUsers = users.map((user: any, i) => (
+    const generateUsers = users ? users?.map((user: any, i) => (
         <TableRow key={i}>
             <TableCell component="th" scope="row">
                 {user.name}
@@ -51,7 +51,7 @@ export default () => {
                 {new Date(user.created_at).toLocaleDateString()}
             </TableCell>
         </TableRow>
-    ));
+    )) : [];
 
     return (
         <div style={{ display: "flex", gap: 10 }}>

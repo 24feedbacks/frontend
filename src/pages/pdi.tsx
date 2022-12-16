@@ -58,7 +58,7 @@ export default () => {
         });
     }, []);
 
-    const renderGoals = goals.map((goal, index) => {
+    const renderGoals = goals.length > 0 ? goals.map((goal, index) => {
         const expand = expanded[index];
         const showImprovementsIcon = expand ? (
             <VisibilityOff />
@@ -128,7 +128,7 @@ export default () => {
                 </Collapse>
             </div>
         );
-    });
+    }) : [];
 
     return (
         <div

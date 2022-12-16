@@ -12,8 +12,6 @@ const MyApp = ({ Component, pageProps, ...nextData }: AppProps) => {
     const [userData, setUserData] = useState(props?.userData);
     const Menu = defineMenu(userData?.category);
 
-    console.log(Menu);
-
     return (
         <UserContext.Provider value={[userData, setUserData]}>
             <div className="Container">

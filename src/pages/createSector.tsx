@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material";
 import { useState, useEffect } from "react";
 import {
-    createCompany,
+    createSector,
     createTeam,
     getCompany,
     getManangers,
@@ -21,8 +21,8 @@ export default () => {
             .catch((err) => console.log(err));
     }, []);
 
-    const insertComapny = async () =>
-        createCompany({ name, company })
+    const insertSector = async () =>
+        createSector({ name, company })
             .then((res) => {})
             .catch((err) => console.log(err));
 
@@ -46,7 +46,7 @@ export default () => {
                 />
             </div>
             <div>
-                <Button onClick={insertComapny}>Criar</Button>
+                <Button onClick={insertSector}>Criar</Button>
             </div>
         </Paper>
     );

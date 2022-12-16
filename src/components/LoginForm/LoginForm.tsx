@@ -35,10 +35,10 @@ export default () => {
         }
 
         const userData = {
-            name: result.name,
-            id: result.id,
-            email: result.email,
-            team: result.team?.id,
+            name: result?.name,
+            id: result?.id,
+            email: result?.email,
+            team: result?.team?.id,
             category: result?.category?.name,
         };
 
